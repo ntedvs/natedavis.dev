@@ -8,7 +8,7 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <main className="mx-auto my-12 w-3/5">{children}</main>
+        <main className="mx-auto my-12 w-4/5 lg:w-3/5">{children}</main>
       </body>
     </html>
   )
