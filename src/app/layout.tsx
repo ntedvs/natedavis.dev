@@ -3,20 +3,21 @@ import { Metadata } from "next"
 import Link from "next/link"
 import { ReactNode } from "react"
 
-export const metadata: Metadata = { title: "Nate Davis" }
+export const metadata: Metadata = {
+  title: { default: "Nate Davis", template: "%s | Nate Davis" },
+}
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-background text-foreground">
-        <nav className="flex gap-6 p-4 text-xl">
-          <p>Nate Davis</p>
-          <Link href="#projects">Projects</Link>
-          <Link href="#experience">Experience</Link>
-          <Link href="#skills">Skills</Link>
+        <nav className="flex gap-4 p-4 text-xl">
+          <Link href="/">Nate Davis</Link>
+          <Link href="/blog">Blog</Link>
+          <Link href="/portfolio">Portfolio</Link>
 
-          <div className="ml-auto space-x-6">
-            <Link href="https://www.linkedin.com/in/nath-davis" target="_blank">
+          <div className="ml-auto flex gap-4">
+            <Link href="https://www.linkedin.com/in/nate-d" target="_blank">
               LinkedIn
             </Link>
 
@@ -26,7 +27,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           </div>
         </nav>
 
-        <main className="mx-auto mt-4 mb-8 w-3/5">{children}</main>
+        <main className="mx-auto w-4/5 lg:w-3/5">{children}</main>
       </body>
     </html>
   )
