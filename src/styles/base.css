@@ -1,13 +1,1 @@
 @import "tailwindcss";
-
-@theme {
-  --color-background: oklch(98.31% 0.0035 219.53);
-  --color-foreground: oklch(18.38% 0.0088 240.43);
-  --color-primary: oklch(58.02% 0.232 1.08);
-}
-
-@layer base {
-  h1 {
-    @apply mb-4 text-4xl font-bold;
-  }
-}
