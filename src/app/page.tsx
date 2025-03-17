@@ -3,7 +3,7 @@ export default function Home() {
     <>
       <h1 className="text-4xl font-bold">Nate Davis</h1>
       <p className="mb-4">
-        Hello. I work primarily with TypeScript, Python, and Rust. I'm
+        Hello. I work primarily with TypeScript, Python, and Rust. I&apos;m
         experimenting as much as I can with AI.
       </p>
 
