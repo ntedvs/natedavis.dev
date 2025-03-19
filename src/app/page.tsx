@@ -98,6 +98,7 @@ export default function Home() {
         <p>Git</p>
         <p>Linux</p>
         <p>FastAPI</p>
+        <p>SEO</p>
       </div>
     </>
   )
