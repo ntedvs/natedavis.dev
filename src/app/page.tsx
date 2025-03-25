@@ -69,7 +69,7 @@ export default function Home() {
       </div>
 
       <h2 className="mb-1 text-2xl font-semibold">Skills</h2>
-      <div className="flex flex-wrap justify-around gap-6 text-lg">
+      <div className="flex flex-wrap justify-around gap-x-6 gap-y-4 text-lg">
         <p>JavaScript</p>
         <p>TypeScript</p>
         <p>Python</p>
