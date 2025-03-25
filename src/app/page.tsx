@@ -99,6 +99,7 @@ export default function Home() {
         <p>Linux</p>
         <p>FastAPI</p>
         <p>SEO</p>
+        <p>Express.js</p>
       </div>
     </>
   )
