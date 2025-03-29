@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: ReactNode }) {
               LinkedIn
             </Link>
 
-            <Link href="https://github.com/NaeNate" target="_blank">
+            <Link href="https://github.com/ntedvs" target="_blank">
               GitHub
             </Link>
           </div>
