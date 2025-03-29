@@ -13,7 +13,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <Link href="/">Nate Davis</Link>
 
           <div className="space-x-4">
-            <Link href="https://www.linkedin.com/in/nate-d" target="_blank">
+            <Link href="https://www.linkedin.com/in/ntedvs" target="_blank">
               LinkedIn
             </Link>
 
