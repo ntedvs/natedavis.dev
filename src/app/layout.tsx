@@ -1,29 +1,36 @@
 import "@/styles/base.css"
 import { Metadata } from "next"
+import { Inter } from "next/font/google"
 import Link from "next/link"
 import { ReactNode } from "react"
 
+const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = { title: "Nate Davis" }
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>
-        <nav className="flex justify-between p-4 text-2xl">
-          <Link href="/">Nate Davis</Link>
+      <body
+        className={
+          "mx-auto max-w-[80rem] bg-background p-6 text-foreground " +
+          inter.className
+        }
+      >
+        <nav className="flex items-center justify-between">
+          <Link href="/" className="text-xl font-bold">
+            Nate Davis
+          </Link>
 
-          <div className="space-x-4">
-            <Link href="https://www.linkedin.com/in/ntedvs" target="_blank">
-              LinkedIn
-            </Link>
-
-            <Link href="https://github.com/ntedvs" target="_blank">
-              GitHub
-            </Link>
+          <div className="space-x-8">
+            <Link href="#about">About</Link>
+            <Link href="#projects">Projects</Link>
+            <Link href="#experience">Experience</Link>
+            <Link href="#skills">Skills</Link>
+            <Link href="#contact">Contact</Link>
           </div>
         </nav>
 
-        <main className="mx-auto mb-8 w-4/5 lg:w-3/5">{children}</main>
+        {children}
       </body>
     </html>
   )
